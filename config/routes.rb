@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # GET "restaurants/38" <- nested resource
 
   resources :restaurants, only: [:show] do
-    resources :reviews, only: [:show, :new]
+    resources :reviews, only: [:show, :new, :create]
     # resources :reviews, only: [:new]
   end
 
